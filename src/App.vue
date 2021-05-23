@@ -27,6 +27,7 @@
       </div>
     </header>
 
+    <!-- list -->
     <div class="index__list">
       <!-- title -->
       <div class="index__list-title">
@@ -34,6 +35,7 @@
         <span>top10</span>
       </div>
 
+      <!-- container -->
       <div class="index__list-container">
         <div class="index__list-container-lookall">
           <span>查看全部</span>
@@ -56,8 +58,11 @@
         </div>
       </div>
     </div>
-    <div class="foot">
-      <span>热门资源</span>
+
+    <!-- footer -->
+    <div class="index__footer">
+      <!-- part1 热门资源 -->
+      <span class="index__footer-title">热门资源</span>
       <div>
         <ul>
           <li>
@@ -92,7 +97,9 @@
           </li>
         </ul>
       </div>
-      <span>热门资讯</span>
+
+      <!-- part2 热门资讯 -->
+      <span class="index__footer-title">热门资讯</span>
       <div class="message">
         <ul>
           <li>
@@ -121,7 +128,9 @@
           </li>
         </ul>
       </div>
-      <span>热门问题</span>
+
+      <!-- part3 热门问题 -->
+      <span class="index__footer-title">热门问题</span>
       <div class="question">
         <ul>
           <li>
@@ -139,6 +148,8 @@
         </ul>
       </div>
     </div>
+
+    <!-- nav -->
     <div class="nav">
       <span>
         <router-link to="login">打卡</router-link>
@@ -221,9 +232,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.index {
-
-}
 .index__header {
 
   .index__header-search {
@@ -411,14 +419,16 @@ export default {
     }
   }
 }
-.foot {
+.index__footer {
   text-align: left;
-  margin: 0.5rem 0rem 0.5rem 0.7rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
   span {
     display: inline-block;
     font-size: 0.5rem;
     font-weight: 600;
-    padding: 0.3rem 0;
+  }
+  .index__footer-title {
+    padding: 10px;
   }
   div {
     height: 2.3rem;
@@ -444,52 +454,49 @@ export default {
         span:nth-child(2) {
           display: inline-block;
           font-size: 0.4rem;
-          vertical-align: 420%;
+          vertical-align: 480%;
+          margin-top: 0.3rem;
         }
         span:nth-child(3) {
           color: #a3c4e3;
           display: inline-block;
           font-size: 0.3rem;
-          vertical-align: 410%;
+          vertical-align: 444%;
           margin-left: -4.4rem;
         }
         span:nth-child(4) {
           color: #a3c4e3;
           display: inline-block;
           font-size: 0.3rem;
-          vertical-align: 410%;
+          vertical-align: 444%;
           margin-left: 0.1rem;
         }
         img:nth-child(5) {
-          margin: -0.1rem 0.3rem 0.3rem -2.8rem;
+          margin: 0rem 0.3rem -0.2rem -3.2rem;
           width: 0.6rem;
           height: 0.6rem;
           background-color: #fff;
           border-radius: 50%;
-          background-color: #fff;
-          vertical-align: 90%;
+          vertical-align: 255%;
         }
         span:nth-child(6) {
           display: inline-block;
           font-size: 0.3rem;
-          vertical-align: 410%;
           margin-left: -0.2rem;
-          vertical-align: 230%;
+          vertical-align: 255%;
         }
         span:nth-child(7) {
           display: inline-block;
           color: #ffbe00;
           font-size: 0.5rem;
-          vertical-align: 410%;
-          margin-left: 1.65rem;
-          vertical-align: 145%;
+          margin-left: 1.44rem;
+          vertical-align: 187%;
         }
         span:nth-child(8) {
           display: inline-block;
           font-size: 0.3rem;
-          vertical-align: 410%;
           margin-left: 0rem;
-          vertical-align: 230%;
+          vertical-align: 255%;
         }
       }
     }
@@ -503,28 +510,26 @@ export default {
       width: 1rem;
       height: 1rem;
       border-radius: 50%;
-      margin-top: 0.5rem;
+      margin-top: 0.3rem;
       margin-right: 0.6rem;
     }
     span:nth-child(6){
       display: inline-block;
-      // padding: -0.3rem 0.3rem 0.3rem 0.5rem;
-      margin: 0 0 0 1.58rem;
-      vertical-align: 200%;
+      margin: 0 0 0 1.25rem;
+      vertical-align: 282%;
       font-size: 0.3rem;
       font-weight: 400;
       color: #aaa;
     }
     span:nth-child(2){
-      padding: 0.3rem 0.3rem 0.3rem 0.5rem;
+      padding: 0rem 0.3rem;
       font-size: 0.4rem;
       font-weight: 600;
     }
     span:nth-child(3){
       display: inline-block;
-      // padding: -0.3rem 0.3rem 0.3rem 0.5rem;
       margin: 0 0 0 0.1rem;
-      vertical-align: 558%;
+      vertical-align: 590%;
       font-size: 0.3rem;
       font-weight: 400;
       color: #aaa;
@@ -532,15 +537,13 @@ export default {
     img:nth-child(4){
       width: 0.7rem;
       height: 0.7rem;
-      // float: left;
-      // top: 2rem;
-      margin: 0 0 0 -3rem;
-      vertical-align: 162%;
+      margin: 0 0 0 -3.1rem;
+      vertical-align: 246%;
     }
     span:nth-child(5){
       display: inline-block;
       margin: 0 0 0 0.3rem;
-      vertical-align: 220%;
+      vertical-align: 276%;
       font-size: 0.3rem;
       font-weight: 400;
     }
@@ -552,21 +555,19 @@ export default {
       li {
         display: inline-block;
         white-space: normal;
-        padding: 0 0.3rem 0.2rem 0.3rem;
+        padding: 0.3rem 0.3rem 0.2rem;
         width: 7rem;
-        height: 2rem;
+        height: 1.8rem;
         span:nth-child(1) {
           display: inline-block;
           font-size: 0.4rem;
-          vertical-align: 420%;
+          vertical-align: 580%;
         }
         span:nth-child(2) {
-          // position: absolute;
-          // float: right;
-          // display: inline-block;
           color: #ffbe00;
           font-size: 0.3rem;
           margin-left: -1.68rem;
+          vertical-align: 530%;
         }
       }
     }
